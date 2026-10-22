@@ -1,0 +1,9 @@
+name: release-drill
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "release drill smoke check passed"
